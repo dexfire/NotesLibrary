@@ -1,0 +1,8 @@
+
+peripheral	英[pəˈrɪfərəl]
+美[pəˈrɪfərəl]
+adj.	外围的; 次要的; （神经） 末梢区域的;
+n.	外部设备;
+[例句]Companies are increasingly keen to contract out peripheral activities like training
+公司越来越倾向于把像培训这样的非核心业务外包出去。
+[其他]	复数：peripherals
