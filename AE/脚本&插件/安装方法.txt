@@ -1,9 +1,0 @@
-脚本
-===============
-把脚本文件放到[AE Installation Dir]\Scripts\ScriptUI Panels下
-然后在AE设置里边开启 脚本读写文件&访问网络 选项。
-最后在Windows下开启 相关的界面即可。
-
-插件
-===============
-插件放到[Adobe After Effects CC 2015]\Support Files\Plug-ins下
