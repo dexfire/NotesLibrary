@@ -1,0 +1,33 @@
+How to generate the 8660_msimage.mbn
+
+8660_msimage.mbn is released in SW by default, actually, it includes the all the boot images and partition table there. MPRG8660.hex will download this image and reset to mass-storage mode. If customers have different HW settings, such as GPIO/DDR, the default 8660_msimage.mbn may not work for them, so customers need build their own 8660_msimage.mbn by themselves with following ways.
+
+1. Have the QPST 2.7.366 or higher version installed. 
+2. Make a local folder, copy sbl1/sbl2/sbl3/rpm/tz images to this folder. 
+3. copy the emmcswdownload.exe from C:\Program Files\Qualcomm\QPST\bin to this folder. 
+4. Prepare the partition_boot.xml as below and copy the partition_boot.xml to the same folder as above.
+  <?xml version="1.0"?>
+<image>
+  <physical_partition number="0">
+    <primary order="1" type="4d" bootable="true" label="SBL1" size="1000" readonly="false">
+      <file name="sbl1.mbn" offset="0"/>
+    </primary>
+    <primary order="2" type="51" bootable="false" label="SBL2" size="3000" readonly="false">
+      <file name="sbl2.mbn" offset="0"/>
+    </primary>
+    <primary order="3" type="45" bootable="false" label="SBL3" size="1500" readonly="false">
+      <file name="sbl3.mbn" offset="0"/>
+    </primary>
+    <primary order="4" type="5" bootable="false" label="EXT" size="1000000">
+      <extended order="1" type="47" label="RPM" size="1000" readonly="false">
+        <file name="rpm.mbn" offset="0"/>
+      </extended>
+      <extended order="2" type="46" label="TZ" size="1000" readonly="false">
+        <file name="tz.mbn" offset="0"/>
+      </extended>
+    </primary>
+  </physical_partition>
+</image>
+5.    Run the emmcswdownload.exe tool to create OEM boot image with a command below. 
+   emmcswdownload.exe -f 8660_msimage.mbn -x partition_boot.xml -s 1G -g 4M
+6. The 8660_msimage.mbn will be generated in the folder.

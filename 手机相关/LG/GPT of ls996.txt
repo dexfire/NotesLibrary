@@ -1,0 +1,350 @@
+Starting to parse GPT
+Size of GPT file is 524288
+Parsing GPT
+        -- GPT STARTs--
+name:        modem
+startLBA:    32768
+endLBA:      196607
+size:        0x0000000005000000 bytes
+attributes:  0x0
+
+
+name:        pmic
+startLBA:    196608
+endLBA:      197631
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        sbl1
+startLBA:    197632
+endLBA:      199679
+size:        0x0000000000100000 bytes
+attributes:  0x0
+
+
+name:        tz
+startLBA:    199680
+endLBA:      201727
+size:        0x0000000000100000 bytes
+attributes:  0x0
+
+
+name:        sdi
+startLBA:    201728
+endLBA:      202751
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        hyp
+startLBA:    202752
+endLBA:      203775
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        rpm
+startLBA:    203776
+endLBA:      204799
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        aboot
+startLBA:    204800
+endLBA:      208895
+size:        0x0000000000200000 bytes
+attributes:  0x0
+
+
+name:        sbl1bak
+startLBA:    208896
+endLBA:      210943
+size:        0x0000000000100000 bytes
+attributes:  0x0
+
+
+name:        pmicbak
+startLBA:    210944
+endLBA:      211967
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        tzbak
+startLBA:    211968
+endLBA:      214015
+size:        0x0000000000100000 bytes
+attributes:  0x0
+
+
+name:        hypbak
+startLBA:    214016
+endLBA:      215039
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        rpmbak
+startLBA:    215040
+endLBA:      216063
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        abootbak
+startLBA:    216064
+endLBA:      220159
+size:        0x0000000000200000 bytes
+attributes:  0x0
+
+
+name:        sdibak
+startLBA:    220160
+endLBA:      221183
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        limits
+startLBA:    221184
+endLBA:      222207
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        devinfo
+startLBA:    222208
+endLBA:      223231
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        apdp
+startLBA:    223232
+endLBA:      224255
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        msadp
+startLBA:    224256
+endLBA:      225279
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        dpo
+startLBA:    225280
+endLBA:      226303
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        misc
+startLBA:    229376
+endLBA:      262143
+size:        0x0000000001000000 bytes
+attributes:  0x0
+
+
+name:        persist
+startLBA:    262144
+endLBA:      327679
+size:        0x0000000002000000 bytes
+attributes:  0x0
+
+
+name:        modemst1
+startLBA:    327680
+endLBA:      330751
+size:        0x0000000000180000 bytes
+attributes:  0x0
+
+
+name:        modemst2
+startLBA:    330752
+endLBA:      333823
+size:        0x0000000000180000 bytes
+attributes:  0x0
+
+
+name:        fsg
+startLBA:    333824
+endLBA:      336895
+size:        0x0000000000180000 bytes
+attributes:  0x0
+
+
+name:        fsc
+startLBA:    336896
+endLBA:      337919
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        ssd
+startLBA:    337920
+endLBA:      338943
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        keystore
+startLBA:    338944
+endLBA:      339967
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        DDR
+startLBA:    339968
+endLBA:      344063
+size:        0x0000000000200000 bytes
+attributes:  0x0
+
+
+name:        sec
+startLBA:    344064
+endLBA:      345087
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        encrypt
+startLBA:    345088
+endLBA:      346111
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        eksst
+startLBA:    346112
+endLBA:      347135
+size:        0x0000000000080000 bytes
+attributes:  0x0
+
+
+name:        rct
+startLBA:    347136
+endLBA:      347151
+size:        0x0000000000002000 bytes
+attributes:  0x0
+
+
+name:        persistent
+startLBA:    347152
+endLBA:      355343
+size:        0x0000000000400000 bytes
+attributes:  0x0
+
+
+name:        laf
+startLBA:    360448
+endLBA:      458751
+size:        0x0000000003000000 bytes
+attributes:  0x0
+
+
+name:        boot
+startLBA:    458752
+endLBA:      540671
+size:        0x0000000002800000 bytes
+attributes:  0x0
+
+
+name:        recovery
+startLBA:    540672
+endLBA:      622591
+size:        0x0000000002800000 bytes
+attributes:  0x0
+
+
+name:        drm
+startLBA:    622592
+endLBA:      638975
+size:        0x0000000000800000 bytes
+attributes:  0x0
+
+
+name:        sns
+startLBA:    638976
+endLBA:      655359
+size:        0x0000000000800000 bytes
+attributes:  0x0
+
+
+name:        mpt
+startLBA:    655360
+endLBA:      720895
+size:        0x0000000002000000 bytes
+attributes:  0x0
+
+
+name:        factory
+startLBA:    720896
+endLBA:      815103
+size:        0x0000000002e00000 bytes
+attributes:  0x0
+
+
+name:        fota
+startLBA:    815104
+endLBA:      835583
+size:        0x0000000000a00000 bytes
+attributes:  0x0
+
+
+name:        raw_resources
+startLBA:    835584
+endLBA:      843775
+size:        0x0000000000400000 bytes
+attributes:  0x0
+
+
+name:        raw_resourcesbak
+startLBA:    843776
+endLBA:      851967
+size:        0x0000000000400000 bytes
+attributes:  0x0
+
+
+name:        system
+startLBA:    851968
+endLBA:      8191999
+size:        0x00000000e0000000 bytes
+attributes:  0x0
+
+
+name:        cust
+startLBA:    8192000
+endLBA:      8716287
+size:        0x0000000010000000 bytes
+attributes:  0x0
+
+
+name:        cache
+startLBA:    8716288
+endLBA:      11239423
+size:        0x000000004d000000 bytes
+attributes:  0x0
+
+
+name:        userdata
+startLBA:    11239424
+endLBA:      60981247
+size:        0x00000005ee000000 bytes
+attributes:  0x0
+
+
+name:        grow
+startLBA:    60981248
+endLBA:      61071326
+size:        0x0000000002bfbe00 bytes
+attributes:  0x0
+
+
+        -- GPT ENDs --
+
+Exited with success
