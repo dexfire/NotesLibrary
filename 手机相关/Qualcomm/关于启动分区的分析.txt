@@ -1,0 +1,73 @@
+Using a flash programmer is probably out of the question now unless someone knows how to authenticate it with sbl1. 
+
+
+Edit: Actually wait I wont disregard this idea yet...
+
+So if you look into the Qualcomm's Gobi Loader protocol (the method they use to communicate with devices in QDL mode) you will find it contains information on how to communicate with devices in this so called bricked state. In the QDLEnum.h file you see that it defines QDL protocol enumerations and related methods
+Quote:
+QDL Download Image Type Enumeration
+
+eQDL_IMAGE_ENUM_BEGIN = -1, 
+eQDL_IMAGE_AMSS_MODEM = 5, // 05 AMSS modem image
+eQDL_IMAGE_AMSS_APPLICATION, // 06 AMSS application image
+eQDL_IMAGE_AMSS_UQCN = 13, // 13 Provisioning information
+eQDL_IMAGE_DBL = 15, // 15 DBL image
+eQDL_IMAGE_OSBL, // 16 OSBL image
+eQDL_IMAGE_ENUM_END
+
+So it would seem that if we were to use the Gobi interface we could upload amss.mbn which if you look at /firmware or /firmware-mdm you can see that the file is clearly in there, better yet the file is in ELF format..so ill update this in a bit with more info as to what it actually does or contains...also check this out, its Ralekdev's post on a similar matter which gave me an idea/clue to this
+
+
+Theory on the reason SBL1 Calls RPM - So we know it contains info on how to kick watchdog out of reset in order to enable krait and uses sbl1 and sbl2. This makes sense with the scenario I've described above. The smart people reading this will realize that amss (in general, not amss.mbn) is the modem, so what the hell does it have to do with sbl1? Good question. Remember those /firmware and /firmware-mdm folders I described above that are mounted via loopback from the modem and hlos? Theres an elf copy of sbl1 and sbl2 in there...so the significance of Gobi requiring the amss modem image is that it corroborates the documentation we have and evidence that shows without sbl1 and sbl2 the device will boot into qhsusb dload mode...so the plot thickens.
+
+
+Some memory location and magic numbers to check out/ locate:
+
+Mobile Model number location 
+MOB_MODEL_LOC 0x00000024 
+ROM_CHECK_LOC 0x000FFFDC
+
+Rom Security Code
+SEC_CODE_BYTES 8 
+SEC_CODE_LOC 0x000FFFE4 
+
+Secure Boot
+SB_OK 0x00000000
+SB_OFF 0x80000000
+SB_ERROR_VALIDATE_PUBLIC_KEY_INFO 0xFFF10000
+SB_ERROR_VERIFY_PSS_RSA_SIGNATURE 0xFFF20000
+
+Magic numbers for allowing SD card dload mode
+FORCE_DLOAD_SD_MAGIC_NUM_1 0xDFE699D3
+FORCE_DLOAD_SD_MAGIC_NUM_2 0x8423C761
+FORCE_DLOAD_SD_MAGIC_NUM_3 0x66666666
+
+
+
+
+enter download mode
+set_charger_state: buck(1), chg(0), reg(0x04)
+ULPI 0x81:3a, 0x82:2b
+USB init ept @ 0xf91a000
+init_ddi_data: usable ddi data.
+<LP> ODIN MODE
+<LP> PRODUCT NAME: SM-N900V
+<LP> CURRENT BINARY: Samsung Official
+<LP> SYSTEM STATUS: Official
+KL: API Status 0x0
+KNOX KERNEL LOCK: 0x0
+<LP> KNOX KERNEL LOCK: 0x0
+WV: API Status 0x0
+KNOX WARRANTY VOID: 0x0
+<LP> KNOX WARRANTY VOID: 0x0
+QFPROM oem_config1: 0x00000f03
+<LP> QUALCOMM SECUREBOOT: ENABLE (CSB)
+anti_en 0xf
+QFPROM_RAW_AP_ANTI_ROLLBACK_ROW0_LSB: 0x10001
+QFPROM_RAW_AP_ANTI_ROLLBACK_ROW1_LSB: 0x3
+QFPROM_RAW_SPARE_REG19_ROW0_LSB: 0x0
+<LP> RP SWREV: S1, T1, R1, A2, P0
+<LP> WRITE PROTECTION: Enable
+odin3_init()
+
+How did you get this print out (I know what it is)?
