@@ -1,0 +1,1 @@
+define("wiki-m-lemma:widget/tools/getUrlParameterByName/getUrlParameterByName",["require","exports","module"],function(e,r,o){o.exports=function(e,r){r||(r=window.location.href),e=e.replace(/[\[\]]/g,"\\$&");var o=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)"),t=o.exec(r);return t?t[2]?decodeURIComponent(t[2].replace(/\+/g," ")):"":null}});
