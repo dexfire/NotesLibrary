@@ -1,0 +1,410 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({ 
+    showMathMenu: false,
+    jax: ['input/TeX','output/HTML-CSS'],
+    showProcessingMessages: false,
+    tex2jax: {
+        preview: [''],
+    },
+    'HTML-CSS': {"
+        fonts: ['TeX'],
+        EqnChunk: 1,
+        EqnChunkFactor: 1,
+        EqnChunkDelay: 10,
+        showMathMenu: false,
+    },
+    extensions: ['tex2jax.js','toMathML.js'],
+    TeX: { extensions: ['AMSmath.js','AMSsymbols.js',
+    'noErrors.js','noUndefined.js','color.js','autobold.js','bbox.js','fast-preview.js'] },
+                //+"'SVG' : { blacker: 30,}
+                // +"styles: { path: { 'shape-rendering': 'crispEdges' } } }
+    });
+	</script>
+
+<!--script type='text/javascript'
+    src='F:\CreatingSpace\MathJax-master\MathJax.js'>
+</script!-->
+
+<script type='text/javascript'
+    src='file:///android_asset/MathJax/MathJax.js'>
+</script>
+<script type='text/javascript'>getLiteralMML = function() {
+    math=MathJax.Hub.getAllJax('math')[0];
+                // below, toMathML() rerurns literal MathML string
+    mml=math.root.toMathML(''); return mml;
+    }; getEscapedMML = function() {
+    math=MathJax.Hub.getAllJax('math')[0];
+                // below, toMathMLquote() applies &-escaping to MathML string input
+    mml=math.root.toMathMLquote(getLiteralMML()); return mml;}
+</script>
+<body>
+
+<h1>一、基本导数公式</h1>
+
+	<span id='math'>
+	</span>
+	<pre>
+		<span id='mmlout'></span>
+	</pre>
+
+⑴ ${\left( c \right)^\prime } = 0$
+
+⑵ ${x^\mu } = \mu {x^{\mu  - 1}}$
+
+⑶ ${\left( {\sin x} \right)^\prime } = \cos x$
+
+⑷ ${\left( {\cos x} \right)^\prime } =  - \sin x$
+
+⑸ ${\left( {\tan x} \right)^\prime } = {\sec ^2}x$
+
+⑹ ${\left( {\cot x} \right)^\prime } =  - {\csc ^2}x$
+
+⑺ ${\left( {\sec x} \right)^\prime } = \sec x \cdot \tan x$
+
+⑻ ${\left( {\csc x} \right)^\prime } =  - \csc x \cdot \cot x$
+
+⑼ ${\left( {{e^x}} \right)^\prime } = {e^x}$
+
+⑽ ${\left( {{a^x}} \right)^\prime } = {a^x}\ln a$
+
+⑾ ${\left( {\ln x} \right)^\prime } = \frac{1}{x}$
+
+⑿ ${\left( {{{\log }_a}^x} \right)^\prime } = \frac{1}{{x\ln a}}$
+
+⒀ ${\left( {\arcsin x} \right)^\prime } = \frac{1}{{\sqrt {1 - {x^2}} }}$
+
+⒁ ${\left( {\arccos x} \right)^\prime } =  - \frac{1}{{\sqrt {1 - {x^2}} }}$
+
+⒂ ${\left( {\arctan x} \right)^\prime } = \frac{1}{{1 + {x^2}}}$
+
+⒃ ${\left( {{\mathop{\rm arc}\nolimits} \cot x} \right)^\prime } =  - \frac{1}{{1 + {x^2}}}$
+
+⒄${\left( x \right)^\prime } = 1$
+
+⒅ ${\left( {\sqrt x } \right)^\prime } = \frac{1}{{2\sqrt x }}$
+
+二、导数的四则运算法则
+
+${\left( {u \pm v} \right)^\prime } = u' \pm v'$
+
+${\left( {uv} \right)^\prime } = u'v + uv'$
+
+${\left( {\frac{u}{v}} \right)^\prime } = \frac{{u'v - uv'}}{{{v^2}}}$
+
+三、高阶导数的运算法则
+
+（1） ${\left[ {u\left( x \right) \pm v\left( x \right)} \right]^{\left( n \right)}} = u{\left( x \right)^{\left( n \right)}} \pm v{\left( x \right)^{\left( n \right)}}$
+
+（2） ${\left[ {cu\left( x \right)} \right]^{\left( n \right)}} = c{u^{\left( n \right)}}\left( x \right)$
+
+（3） ${\left[ {u\left( {ax + b} \right)} \right]^{\left( n \right)}} = {a^n}{u^{\left( n \right)}}\left( {ax + b} \right)$
+
+（4） ${\left[ {u\left( x \right) \cdot v\left( x \right)} \right]^{\left( n \right)}} = \sum\limits_{k = 0}^n {c_n^k{u^{\left( {n - k} \right)}}\left( x \right)} {v^{(k)}}\left( x \right)$
+
+四、基本初等函数的n阶导数公式
+
+（1） ${\left( {{x^n}} \right)^{\left( n \right)}} = n!$     
+
+（2）${\left( {{e^{ax + b}}} \right)^{\left( n \right)}} = {a^n} \cdot {e^{ax + b}}$
+
+（3） ${\left( {{a^x}} \right)^{\left( n \right)}} = {a^x}{\ln ^n}a$
+
+（4）${\left[ {\sin \left( {ax + b} \right)} \right]^{\left( n \right)}} = {a^n}\sin \left( {ax + b + n \cdot \frac{\pi }{2}} \right)$
+
+（5）  ${\left[ {\cos \left( {ax + b} \right)} \right]^{\left( n \right)}} = {a^n}\cos \left( {ax + b + n \cdot \frac{\pi }{2}} \right)$
+
+（6）${\left( {\frac{1}{{ax + b}}} \right)^{\left( n \right)}} = {\left( { - 1} \right)^n}\frac{{{a^n} \cdot n!}}{{{{\left( {ax + b} \right)}^{n + 1}}}}$
+
+（7） ${\left[ {\ln \left( {ax + b} \right)} \right]^{\left( n \right)}} = {\left( { - 1} \right)^{n - 1}}\frac{{{a^n} \cdot \left( {n - 1} \right)!}}{{{{\left( {ax + b} \right)}^n}}}$
+
+五、微分公式与微分运算法则
+
+⑴ $d\left( c \right) = 0$
+
+⑵ $d\left( {{x^\mu }} \right) = \mu {x^{\mu  - 1}}dx$
+
+⑶ $d\left( {\sin x} \right) = \cos xdx$
+
+⑷ $d\left( {\cos x} \right) =  - \sin xdx$
+
+⑸ $d\left( {\tan x} \right) = {\sec ^2}xdx$
+
+⑹ $d\left( {\cot x} \right) =  - {\csc ^2}xdx$
+
+⑺  $d\left( {\sec x} \right) = \sec x \cdot \tan xdx$
+
+⑻ $d\left( {\csc x} \right) =  - \csc x \cdot \cot xdx$
+
+⑼ $d\left( {{e^x}} \right) = {e^x}dx$
+
+⑽ $d\left( {{a^x}} \right) = {a^x}\ln adx$
+
+⑾ $d\left( {\ln x} \right) = \frac{1}{x}dx$
+
+⑿ $d\left( {{{\log }_a}^x} \right) = \frac{1}{{x\ln a}}dx$
+
+⒀ $d\left( {\arcsin x} \right) = \frac{1}{{\sqrt {1 - {x^2}} }}dx$
+
+⒁ $d\left( {\arccos x} \right) =  - \frac{1}{{\sqrt {1 - {x^2}} }}dx$
+
+⒂ $d\left( {\arctan x} \right) = \frac{1}{{1 + {x^2}}}dx$
+⒃ $d\left( {{\mathop{\rm arc}\nolimits} \cot x} \right) =  - \frac{1}{{1 + {x^2}}}dx$
+
+六、微分运算法则
+
+⑴$d\left( {u \pm v} \right) = du \pm dv$
+
+⑵$d\left( {cu} \right) = cdu$
+
+⑶$d\left( {uv} \right) = vdu + udv$
+
+⑷ $d\left( {\frac{u}{v}} \right) = \frac{{vdu - udv}}{{{v^2}}}$
+
+七、基本积分公式
+
+⑴$\int {kdx = kx + c} $
+
+⑵$\int {{x^\mu }} dx = \frac{{{x^{\mu  + 1}}}}{{\mu  + 1}} + c$
+
+⑶$\int {\frac{{dx}}{x}}  = \ln \left| x \right| + c$
+
+⑷$\int {{a^x}dx}  = \frac{{{a^x}}}{{\ln a}} + c$
+
+⑸$\int {{e^x}} dx = {e^x} + c$
+
+⑹$\int {\cos xdx}  = \sin x + c$
+
+⑺ $\int {\sin xdx}  =  - \cos x + c$
+
+⑻ $\int {\frac{1}{{{{\cos }^2}x}}dx}  = \int {{{\sec }^2}x} dx = \tan x + c$
+
+⑼ $\int {\frac{1}{{{{\sin }^2}x}}}  = \int {{{\csc }^2}x} dx =  - \cot x + c$
+
+⑽ $\int {\frac{1}{{1 + {x^2}}}dx}  = \arctan x + c$
+
+⑾ $\int {\frac{1}{{\sqrt {1 - {x^2}} }}dx}  = \arcsin x + c$
+
+八、补充积分公式
+
+$\int {\tan xdx =  - \ln \left| {\cos x} \right| + c} $
+
+$\int {\cot xdx = \ln \left| {\sin x} \right| + c} $
+
+$\int {\sec xdx = \ln \left| {\sec x + \tan x} \right| + c} $
+
+$\int {\csc xdx = \ln \left| {\csc x - \cot x} \right| + c} $
+
+$\int {\frac{1}{{{a^2} + {x^2}}}dx = \frac{1}{a}\arctan \frac{x}{a} + c} $
+
+$\int {\frac{1}{{{x^2} - {a^2}}}dx = \frac{1}{{2a}}\ln \left| {\frac{{x - a}}{{x + a}}} \right| + c} $
+
+$\int {\frac{1}{{\sqrt {{a^2} - {x^2}} }}dx = \arcsin \frac{x}{a} + c} $
+
+$\int {\frac{1}{{\sqrt {{x^2} \pm {a^2}} }}dx = \ln \left| {x + \sqrt {{x^2} \pm {a^2}} } \right| + c} $
+
+九、下列常用凑微分公式
+
+积分型	换元公式
+\[\int {f\left( {ax + b} \right)} dx = \frac{1}{a}\int {f\left( {ax + b} \right)} d\left( {ax + b} \right)\] \[u = ax + b\]
+\[\int {f\left( {{x^\mu }} \right)} {x^{\mu  - 1}}dx = \frac{1}{\mu }\int {f\left( {{x^\mu }} \right)} d\left( {{x^\mu }} \right)\] \[u = {x^\mu }\]
+\[\int {f\left( {\ln x} \right)}  \cdot \frac{1}{x}dx = \int {f\left( {\ln x} \right)} d\left( {\ln x} \right)\] \[u = \ln x\]
+\[\int {f\left( {{e^x}} \right)}  \cdot {e^x}dx = \int {f\left( {{e^x}} \right)} d\left( {{e^x}} \right)\] \[u = {e^x}\]
+\[\int {f\left( {{a^x}} \right)}  \cdot {a^x}dx = \frac{1}{{\ln a}}\int {f\left( {{a^x}} \right)} d\left( {{a^x}} \right)\] \[u = {a^x}\]
+\[\int {f\left( {\sin x} \right)}  \cdot \cos xdx = \int {f\left( {\sin x} \right)} d\left( {\sin x} \right)\]  \[u = \sin x\]
+\[\int {f\left( {\cos x} \right)}  \cdot \sin xdx =  - \int {f\left( {\cos x} \right)} d\left( {\cos x} \right)\] \[u = \cos x\]
+\[\int {f\left( {\tan x} \right)}  \cdot {\sec ^2}xdx = \int {f\left( {\tan x} \right)} d\left( {\tan x} \right)\] \[u = \tan x\]
+\[\int {f\left( {\cot x} \right)}  \cdot {\csc ^2}xdx = \int {f\left( {\cot x} \right)} d\left( {\cot x} \right)\] \[u = \cot x\]
+\[\int {f\left( {\arctan x} \right)}  \cdot \frac{1}{{1 + {x^2}}}dx = \int {f\left( {{\mathop{\rm arc}\nolimits} tanx} \right)} d\left( {{\mathop{\rm arc}\nolimits} tanx} \right)\] \[u = \arctan x\]
+\[\int {f\left( {\arcsin x} \right)}  \cdot \frac{1}{{\sqrt {1 - {x^2}} }}dx = \int {f\left( {\arcsin x} \right)} d\left( {\arcsin x} \right)\] \[u = \arcsin x\]
+
+十、分部积分法公式
+
+⑴形如\[\int {{x^n}} {e^{ax}}dx\] ，令 \[u = {x^n}\]，\[dv = {e^{ax}}dx\]
+形如\[\int {{x^n}} \sin xdx\] 令\[u = {x^n}\] ，\[dv = \sin xdx\]
+形如\[\int {{x^n}} \cos xdx\] 令\[u = {x^n}\] ，\[dv = \cos xdx\]
+⑵形如\[\int {{x^n}} \arctan xdx\] ，令\[u = \arctan x\] ， \[dv = {x^n}dx\]
+形如\[\int {{x^n}} \ln xdx\] ，令\[u = \ln x\] ， \[dv = {x^n}dx\]
+⑶形如\[\int {{e^{ax}}} \sin xdx\] ，\[\int {{e^{ax}}} \cos xdx\] 令\[u = {e^{ax}},\sin x,\cos x\] 均可。
+
+十一、第二换元积分法中的三角换元公式
+
+(1) \[\sqrt {{a^2} - {x^2}} \] \[x = a\sin t\]
+ (2) \[\sqrt {{a^2} + {x^2}} \] \[x = a\tan t\]
+ (3) \[\sqrt {{x^2} - {a^2}} \] \[x = a\sec t\]
+
+【特殊角的三角函数值】
+
+（1）$\sin 0 = 0$
+
+（2） $\sin \frac{\pi }{6} = \frac{1}{2}$
+
+（3） $\sin \frac{\pi }{3} = \frac{{\sqrt 3 }}{2}$
+
+（4） $\sin \frac{\pi }{2} = 1$
+
+（5） $\sin \pi  = 0$
+
+（1）$\cos 0 = 1$
+
+（2）$\cos \frac{\pi }{6} = \frac{{\sqrt 3 }}{2}$
+
+（3）$\cos \frac{\pi }{3} = \frac{1}{2}$
+
+（4）$\cos \frac{\pi }{2} = 0$
+
+（5） $\cos \pi  =  - 1$
+
+（1） $\tan 0 = 0$
+
+（2）$\tan \frac{\pi }{6} = \frac{{\sqrt 3 }}{3}$
+
+（3）$\tan \frac{\pi }{3} = \sqrt 3 $
+
+（4）$\tan \frac{\pi }{2}$ 不存在
+
+（5） $\tan \pi  = 0$
+
+（1） $\cot 0$不存在
+
+（2）$\cot \frac{\pi }{6} = \sqrt 3 $
+
+（3）$\cot \frac{\pi }{3} = \frac{{\sqrt 3 }}{3}$
+
+（4） $\cot \frac{\pi }{2} = 0$
+
+（5） $\cot \pi $不存在
+
+十二、重要公式
+
+（1） \[\lim _{x \to 0} \frac{{\sin x}}{x} = 1\]
+（2）  \[\mathop {\lim }\limits_{x \to 0} {\left( {1 + x} \right)^{\frac{1}{x}}} = e\]
+（3） \[\mathop {\lim }\limits_{n \to \infty } \sqrt[n]{a}(a > o) = 1\]
+（4） \[\mathop {\lim }\limits_{n \to \infty } \sqrt[n]{n} = 1\]
+（5）\[\mathop {\lim }\limits_{x \to \infty } \arctan x = \frac{\pi }{2}\]
+（6） \[\mathop {\lim }\limits_{x \to  - \infty } arc\tan x =  - \frac{\pi }{2}\]
+（7） \[\mathop {\lim }\limits_{x \to \infty } {\mathop{\rm arc}\nolimits} \cot x = 0\]
+（8） \[\mathop {\lim }\limits_{x \to  - \infty } {\mathop{\rm arc}\nolimits} \cot x = \pi \]
+（9）\[\mathop {\lim }\limits_{x \to  - \infty } {e^x} = 0\]
+（10） \[\mathop {\lim }\limits_{x \to  + \infty } {e^x} = \infty \]
+（11） \[\mathop {\lim }\limits_{x \to {0^ + }} {x^x} = 1\]
+（12）\[\mathop {\lim }\limits_{x \to \infty } \frac{{{a_0}{x^n} + {a_1}{x^{n - 1}} +  \cdots  + {a_n}}}{{{b_0}{x^m} + {b_1}{x^{m - 1}} +  \cdots  + {b_m}}} = \left\{ {\begin{array}{*{20}{c}}
+{\frac{{{a_0}}}{{{b_0}}}}&{n = m}\\
+0&{n < m}\\
+\infty &{n > m}
+\end{array}} \right.\]
+（系数不为0的情况）
+
+十三、下列常用等价无穷小关系（x ->0 ）
+
+$\sin x \sim x$
+
+$\tan x \sim x$
+
+$\arcsin x \sim x$
+
+$\arctan x \sim x$
+
+$1 - \cos x \sim \frac{1}{2}{x^2}$
+
+$\ln \left( {1 + x} \right) \sim x$
+
+${e^x} - 1 \sim x$
+
+${a^x} - 1 \sim x\ln a$
+
+${\left( {1 + x} \right)^\partial } - 1 \sim \partial x$
+
+十四、三角函数公式
+
+1.两角和公式
+
+$\sin (A + B) = \sin A\cos B + \cos A\sin B$  $\sin (A - B) = \sin A\cos B - \cos A\sin B$
+
+$\cos (A + B) = \cos A\cos B - \sin A\sin B$  $\cos (A - B) = \cos A\cos B + \sin A\sin B$
+
+$\tan (A + B) = \frac{{\tan A + \tan B}}{{1 - \tan A\tan B}}$   $\tan (A - B) = \frac{{\tan A - \tan B}}{{1 + \tan A\tan B}}$
+
+$\cot (A + B) = \frac{{\cot A \cdot \cot B - 1}}{{\cot B + \cot A}}$ $\cot (A - B) = \frac{{\cot A \cdot \cot B + 1}}{{\cot B - \cot A}}$
+
+2.二倍角公式
+
+$\sin 2A = 2\sin A\cos A$ $\cos 2A = {\cos ^2}A - {\sin ^2}A = 1 - 2{\sin ^2}A = 2{\cos ^2}A - 1$
+
+$\tan 2A = \frac{{2\tan A}}{{1 - {{\tan }^2}A}}$
+
+3.半角公式
+
+ $\sin \frac{A}{2} = \sqrt {\frac{{1 - \cos A}}{2}} $  $\cos \frac{A}{2} = \sqrt {\frac{{1 + \cos A}}{2}} $
+
+ $\tan \frac{A}{2} = \sqrt {\frac{{1 - \cos A}}{{1 + \cos A}}}  = \frac{{\sin A}}{{1 + \cos A}}$  $\cot \frac{A}{2} = \sqrt {\frac{{1 + \cos A}}{{1 - \cos A}}}  = \frac{{\sin A}}{{1 - \cos A}}$
+
+4.和差化积公式
+
+$\sin a + \sin b = 2\sin \frac{{a + b}}{2} \cdot \cos \frac{{a - b}}{2}$ $\sin a - \sin b = 2\cos \frac{{a + b}}{2} \cdot \sin \frac{{a - b}}{2}$
+
+$\cos a + \cos b = 2\cos \frac{{a + b}}{2} \cdot \cos \frac{{a - b}}{2}$ $\cos a - \cos b =  - 2\sin \frac{{a + b}}{2} \cdot \sin \frac{{a - b}}{2}$
+
+$\tan a + \tan b = \frac{{\sin \left( {a + b} \right)}}{{\cos a \cdot \cos b}}$
+
+5.积化和差公式
+
+$\sin a\sin b =  - \frac{1}{2}\left[ {\cos \left( {a + b} \right) - \cos \left( {a - b} \right)} \right]$
+
+$\cos a\cos b = \frac{1}{2}\left[ {\cos \left( {a + b} \right) + \cos \left( {a - b} \right)} \right]$
+
+$\sin a\cos b = \frac{1}{2}\left[ {\sin \left( {a + b} \right) + \sin \left( {a - b} \right)} \right]$
+
+$\cos a\sin b = \frac{1}{2}\left[ {\sin \left( {a + b} \right) - \sin \left( {a - b} \right)} \right]$
+
+6.万能公式
+
+$\sin a = \frac{{2\tan \frac{a}{2}}}{{1 + {{\tan }^2}\frac{a}{2}}}$
+
+$\cos a = \frac{{1 - {{\tan }^2}\frac{a}{2}}}{{1 + {{\tan }^2}\frac{a}{2}}}$
+
+$\tan a = \frac{{2\tan \frac{a}{2}}}{{1 - {{\tan }^2}\frac{a}{2}}}$
+
+7.平方关系
+
+${\sin ^2}x + {\cos ^2}x = 1$
+
+${\sec ^2}x - ta{n^2}x = 1$
+
+${\csc ^2}x - {\cot ^2}x = 1$
+
+8.倒数关系
+
+$\tan x \cdot \cot x = 1$
+
+$\sec x \cdot \cos x = 1$
+
+$cscx \cdot \sin x = 1$
+
+9.商数关系
+
+ $\tan x = \frac{{\sin x}}{{\cos x}}$
+
+ $\cot x = \frac{{\cos x}}{{\sin x}}$
+
+十五、几种常见的微分方程
+
+1.可分离变量的微分方程：
+
+\[\frac{{dy}}{{dx}} = f\left( x \right)g\left( y \right)\]  ，
+\[{f_1}\left( x \right){g_1}\left( y \right)dx + {f_2}\left( x \right){g_2}\left( y \right)dy = 0\]
+
+2.齐次微分方程：
+
+ \[\frac{{dy}}{{dx}} = f\left( {\frac{y}{x}} \right)\]
+
+3.一阶线性非齐次微分方程：
+
+\[\frac{{dy}}{{dx}} + p\left( x \right)y = Q\left( x \right)\]
+ 解为：
+\[y = {e^{ - \int {p\left( x \right)dx} }}\left[ {\int {Q\left( x \right){e^{\int {p\left( x \right)dx} }}dx + c} } \right]\]
+
+</body>
+</html>
