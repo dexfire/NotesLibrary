@@ -1,0 +1,101 @@
+卷 GameOne 的文件夹 PATH 列表
+卷序列号为 00000150 0A87:98B8
+E:\GAMES\WARCRAFT III
+│  blizzard_war3_2018_install_data_tree.txt
+│  
+└─Data
+    ├─config
+    │  ├─3e
+    │  │  └─7e
+    │  │          3e7e69c14c807d5df67fd7e10915a99c
+    │  │          
+    │  └─61
+    │      └─fa
+    │              61fa3e859c796f03bb0f086d15fc8443
+    │              
+    ├─data
+    │      0000000003.idx
+    │      0000000004.idx
+    │      0100000002.idx
+    │      0100000003.idx
+    │      0200000002.idx
+    │      0200000003.idx
+    │      0300000002.idx
+    │      0300000003.idx
+    │      0400000001.idx
+    │      0400000002.idx
+    │      0500000002.idx
+    │      0500000003.idx
+    │      0600000002.idx
+    │      0600000003.idx
+    │      0700000002.idx
+    │      0700000003.idx
+    │      0800000002.idx
+    │      0800000003.idx
+    │      0900000002.idx
+    │      0900000003.idx
+    │      0a00000002.idx
+    │      0a00000003.idx
+    │      0b00000002.idx
+    │      0b00000003.idx
+    │      0c00000003.idx
+    │      0c00000004.idx
+    │      0d00000002.idx
+    │      0d00000003.idx
+    │      0e00000002.idx
+    │      0e00000003.idx
+    │      0f00000002.idx
+    │      0f00000003.idx
+    │      data.000
+    │      shmem
+    │      
+    └─indices
+            010766f3e0301b8b6530016cb88cd1dc.index
+            05ba6cfe2e03bece9dc3c805ee6d7938.index
+            09e64b3a09a6f73aceb2dc60b6d29bb5.index
+            0eae8e37164dbf2c22599c0d9e7162fb.index
+            0f375e5d0ce11552f03bcbf545dab505.index
+            0f4e02ecf40b40ac1799e927a73268d0.index
+            1793bd5e5eadcc2dcfb3e987be722a90.index
+            1ed6e6f0226562399dcc577686bd23be.index
+            28758e9a84ace79dba80c806affd5ece.index
+            2b7dd853f45f5faa762ec235d485a25d.index
+            2bd79832bfe41241532edfe3e8244aa5.index
+            2e125de4b1c4c937eedf1896961fbe70.index
+            30db8b33afee4ff185822bce0f1b6e0f.index
+            31e8c1d24b694aa0599b78951610cebf.index
+            3cec0aa1bf345f7d1ba2df17221a7d12.index
+            3e06931a4295ba64e6e49e21263f077b.index
+            3fec575d1b162544e372d351a43d9639.index
+            4899244c3c714640abf45ffe63a4e4a2.index
+            4e2a9371c675c7199dafb487935343b9.index
+            567b1699e11f735b9f6dfc239bbf9258.index
+            5d630b6e951d2f0659297d1d0ea46f89.index
+            5ff65496563f8a0f23ce6a88a3d49f29.index
+            6de4625b1e5d51a38a19d67f054f8c8f.index
+            716e7a5797b964279e702aae71587a16.index
+            73cc31971bf07709333a201584477d6e.index
+            74a1134f804ec0520db0620151bb632e.index
+            8d695aaaa8922c7b780c79ceafa5aebc.index
+            91232966e1aca8083227a77bf7277c44.index
+            943e245a41329d3f05ee80ab5af8116b.index
+            96bef7c69455fd83230566f2bdc52441.index
+            974e76389cb092b23b1576938134868c.index
+            9b6993a9af1c1f0765ebcc2e9f1e045f.index
+            a1affd091071c8b6e16acdeaff0cd835.index
+            b7011577aa96aa417b7fc270f10c04fc.index
+            b94a4666118e96090bf158d2d249caee.index
+            c4608bbe80cc12a9587f559bbdde3db7.index
+            cbbe1801544184c4f26dbc8563f4dba9.index
+            d64987bd058eb40629c7a68186eb11cd.index
+            d8bb1a4746afd5a286d5b0bf412306bf.index
+            da5ea7a8374089653ffe5ecce6f97de7.index
+            e2c24f4700d69763d7f1ec01794d9dbf.index
+            e3be5934734688604f74d7f260db4a26.index
+            eb840e447f7b0e66459d128239d10c4c.index
+            ef7f21a71d5d636cb7f5c79f420e7277.index
+            f2b30cd60154c09248843529d90253dd.index
+            f5a4bd565a297bf7a826ed997649577a.index
+            f62bc8fc4a59896dd104e6435b5b2ac3.index
+            f970f9cd7a4f5de4af971cac434ca267.index
+            
