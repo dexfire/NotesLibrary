@@ -1,1 +1,0 @@
-define("wiki-m-lemma:widget/tools/openBoxEid/openBoxEid",["require","exports","module"],function(e,i,o){o.exports={agc:"202",agt:"203",igc:"204",igt:"205"}});

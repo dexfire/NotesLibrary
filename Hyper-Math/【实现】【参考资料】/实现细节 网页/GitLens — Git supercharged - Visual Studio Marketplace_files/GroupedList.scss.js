@@ -1,3 +1,0 @@
-//dependencies=@microsoft/load-themed-styles#?
-define(["require","exports","@microsoft/load-themed-styles"],function(n,t,i){"use strict";Object.defineProperty(t,"__esModule",{value:!0});i.loadStyles([{rawString:".root_475bc5f4{position:relative;font-size:12px}.group_475bc5f4{-webkit-transition:background-color .267s cubic-bezier(0.445, 0.05, 0.55, 0.95);transition:background-color .267s cubic-bezier(0.445, 0.05, 0.55, 0.95)}.groupIsDropping_475bc5f4{background-color:"},{theme:"neutralLight",defaultValue:"#eaeaea"},{rawString:"}.root_475bc5f4 .ms-List-cell{min-height:36px}\n"}]);t.root="root_475bc5f4";t.group="group_475bc5f4";t.groupIsDropping="groupIsDropping_475bc5f4"});
-//direct-dependencies=@microsoft/load-themed-styles
